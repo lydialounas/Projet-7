@@ -1,0 +1,608 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+body { 
+	width: 100%;
+	height: 100%;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+	background-color: #efecdb;
+	padding: 0%;
+}
+
+main {
+	min-height: 69vh
+}
+
+/* hello ? */
+
+header {
+	 
+	display: flex;
+	justify-content:space-between;
+	margin: 50px 0;
+	font-size: 15px;
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: start;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+
+img[alt="Instagram"] {
+   width: 24px;
+	height: 24px;
+	filter: grayscale(100%);
+  }
+  
+#login{
+width:400px;
+Size:16px;
+ height: 19px;
+ left:2px;
+ color:black
+}
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+
+#portfolio {
+	position: relative;
+}
+
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+#contact {
+	width: 50%;
+margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+#contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+	margin: 2em 0 1em 0;
+}
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+	
+}
+
+.login-form {
+width: 30%;
+margin: auto;
+}
+.login-form > * {
+	text-align: center;
+
+}
+.login-form h2{
+	margin-bottom: 20px;
+}
+.login-form form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-form input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.login-form label {
+	margin: 2em 0 1em 0;
+}
+.forgot-password {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: center;
+	color: #0b0b0b; /* ou un autre gris foncé si tu préfères */
+	text-decoration: underline;
+  }
+    
+  footer {
+	padding: 30px 60px;
+	background-color:#ffff;
+	text-align: left;
+	 
+	}
+
+footer nav ul {
+	margin:0px;
+	padding:0px;
+	display: flex;
+	justify-content: flex-end;
+ }
+footer nav ul li {
+	font-size: 14px;
+	color: #000;
+	 
+  }
+.admin-panel {
+	background-color: black;
+	color: white;
+	height: 50px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+ .display-first-modal {
+	position: absolute;
+	top: 6px;
+	right: 25%;
+	display: none;
+	color: #060505;
+	 font-weight: 600;
+ }
+
+ .modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+ }
+
+.modal-content {
+	background-color: white;
+	height: 70%;
+	width: 50%;
+}
+/* Conteneur des boutons */
+.boutons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+	margin: 10px 0;
+}
+.boutons button {
+		font-family: 'Syne';
+		font-weight: 700;
+		color: black;
+		background-color: white;
+		width: 237px;
+		text-align: center;
+		border-radius: 60px;
+		height: 36px;
+		cursor: pointer;
+}
+
+.boutons button.active {
+	background-color: #1D6154;
+	color: white;
+}
+
+/* Style des boutons */
+.filters button {
+    background-color: transparent;
+    border: 2px solid #4D665E; /* Couleur de la bordure */
+    color: #010806; /* Couleur du texte */
+    padding: 8px 16px;
+    border-radius: 20px; /* Pour un effet arrondi */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Bouton actif */
+.filters button.active,
+.filters button:hover {
+    background-color: #4D665E; /* Couleur de fond lorsqu'il est actif */
+    color: white;
+}
+ 
+
+/* Conteneur des images dans la modale */
+.gallery-modal {
+	
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images par ligne */
+    gap: 5px; /* Espacement uniforme entre les images */
+    justify-content: center;
+	margin: 40px 0;
+}
+
+/* Styles des figures contenant les images */
+.gallery-modal figure {
+    position: relative;
+    width: 76px; /* Taille uniforme des figures */
+    height: 100px;
+    margin: 0; /* Supprime les marges inutiles */
+	justify-content: center;
+	margin: 5px;
+}
+
+/* Ajustement des images */
+.gallery-modal img {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	 
+}
+.modal-content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	width: fit-content;
+	padding: 20px;
+}
+
+.modal-content hr {
+	width: 100%;
+}
+
+/* Icône de suppression */
+.delete-photo {
+  position: absolute;
+    top: 5px;
+    right: 4px;
+    background: rgba(20, 20, 20, 50);
+    color: white;
+    border: none;
+    border-radius:10%;
+    width: 15px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Bouton "Ajouter une photo" */
+#add-photo-btn {
+	font-family: 'Syne', sans-serif;
+    display: block;
+    width: 237px;
+	height: 36px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #2c635f;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-content .go-back {
+	position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #060505;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+ /* -------- Deuxième modale : Ajout photo -------- */
+
+#second-modal .modal-content {
+	position: relative;
+	background-color: white;
+	width: 40%;
+	padding: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  #second-modal h3 {
+	font-size: 24px;
+	color: #1D6154;
+	margin-bottom: 20px;
+  }
+  
+  /* Icône retour */
+  .back-back {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  /* Bouton fermer */
+  .close-modal {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  /* Boîte de téléchargement */
+  .upload-box {
+	width: 100%;
+	height: 200px;
+	background-color: #E8F1F6;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
+  }
+  
+  .upload-box img.icon-placeholder {
+	width: 60px;
+	margin-bottom: 10px;
+  }
+  
+  .upload-box .photo-upload   {
+	background-color: #CBD6DC;
+	color: #306685;
+	padding: 8px 20px;
+	border-radius: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+  }
+  
+  .upload-box input[type="file"] {
+	display: none;
+  }
+  
+  .upload-info {
+	font-size: 12px;
+	color: #444;
+	margin-top: 8px;
+  }
+  
+  /* Prévisualisation de l’image */
+  .preview-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  /* Champs de formulaire */
+  #add-photo-form label {
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  #add-photo-form input[type="text"],
+  #add-photo-form select {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	padding: 0 10px;
+	font-size: 14px;
+  }
+  
+  #add-photo-form hr {
+	width: 100%;
+	margin: 20px 0;
+	border: none;
+	border-top: 1px solid #ccc;
+  }
+  
+  /* Bouton valider */
+  .validate-btn {
+	width: 180px;
+	height: 36px;
+	background-color: #1D6154;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	font-family: 'Syne';
+	font-weight: bold;
+	cursor: pointer;
+	align-self: center;
+	transition: background 0.3s ease;
+  }
+  .upload-label{
+	display: contents;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+
+  }
+  .upload-label span{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 5px;
+  }
+  .validate-btn:hover {
+	background-color: #14463d;
+  }
+ 
+  .label-photo-upload {
+    width: 173px;
+	height: 36px;
+	border-radius: 50px;
+	background-color: #CBD6DC;
+	color: #306685;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+  }
+
+  #submit-photo {
+	width: 237px;
+height: 36px;
+border-radius: 60px;
+align-self: center;
+margin-left: 25%;
+border: none;
+background-color: #A7A7A7;
+font-family: 'Syne', sans-serif;
+color: white;
+cursor: not-allowed;
+  }
+  
